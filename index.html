@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora iOS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="header">
+            <div class="title">Calculadora Kitson</div>
+        </div>
+        <div class="display-container">
+            <div class="display" id="display">0</div>
+        </div>
+        <div class="buttons">
+            <!-- Primeira Linha -->
+            <button class="btn btn-icon" onclick="clearDisplay()">C</button>
+            <button class="btn btn-icon" onclick="toggleSign()">±</button>
+            <button class="btn btn-icon" onclick="appendToDisplay('%')">%</button>
+            <button class="btn btn-icon" onclick="appendToDisplay('/')">÷</button>
+
+            <!-- Segunda Linha -->
+            <button class="btn btn-icon" onclick="appendToDisplay('7')">7</button>
+            <button class="btn btn-icon" onclick="appendToDisplay('8')">8</button>
+            <button class="btn btn-icon" onclick="appendToDisplay('9')">9</button>
+            <button class="btn btn-icon" onclick="appendToDisplay('*')">x</button>
+
+            <!-- Terceira Linha -->
+            <button class="btn btn-icon" onclick="appendToDisplay('4')">4</button>
+            <button class="btn btn-icon" onclick="appendToDisplay('5')">5</button>
+            <button class="btn btn-icon" onclick="appendToDisplay('6')">6</button>
+            <button class="btn btn-icon" onclick="appendToDisplay('-')">-</button>
+
+            <!-- Quarta Linha -->
+            <button class="btn btn-icon" onclick="appendToDisplay('1')">1</button>
+            <button class="btn btn-icon" onclick="appendToDisplay('2')">2</button>
+            <button class="btn btn-icon" onclick="appendToDisplay('3')">3</button>
+            <button class="btn btn-icon" onclick="appendToDisplay('+')">+</button>
+
+            <!-- Quinta Linha -->
+            <button class="btn btn-zero" onclick="appendToDisplay('0')" style="grid-column: span 2;">0</button>
+            <button class="btn btn-icon" onclick="appendToDisplay('.')">.</button>
+            <button class="btn btn-equal" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
