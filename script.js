@@ -87,3 +87,15 @@ function animateTitle() {
     title.classList.add('animate');
     setTimeout(() => title.classList.remove('animate'), 500);
 }
+function toggleDarkMode() {
+    const body = document.body;
+    const toggleButton = document.getElementById('darkModeToggle');
+
+    if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        toggleButton.textContent = 'Modo Escuro';
+    } else {
+        body.classList.add('dark-mode');
+        toggleButton.textContent = 'Modo Claro';
+    }
+}
