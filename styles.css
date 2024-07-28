@@ -215,3 +215,39 @@ body.dark-mode .btn-equal:hover {
 .title.animate {
     animation: animateTitle 0.5s ease;
 }
+/* Garantir compatibilidade com Safari e outros navegadores */
+.dark-mode body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .calculator {
+    background-color: #333333;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.6); /* Safari */
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+.dark-mode .display-container {
+    background-color: #444444;
+}
+
+.dark-mode .display {
+    color: #ffffff;
+}
+
+.dark-mode .btn {
+    background-color: #555555;
+    border-color: #444444;
+}
+
+.dark-mode .btn:hover {
+    background-color: #666666;
+}
+
+.dark-mode .btn-equal {
+    background-color: #0066cc;
+}
+
+.dark-mode .btn-equal:hover {
+    background-color: #005bb5;
+}
