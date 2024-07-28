@@ -54,3 +54,36 @@ function animateTitle() {
     // Remove a animação após a execução para permitir novas animações
     setTimeout(() => title.classList.remove('animate'), 500);
 }
+// Atualize o toggleDarkMode para adicionar/remover classes de forma consistente
+function toggleDarkMode() {
+    const body = document.body;
+    const toggleButton = document.getElementById('darkModeToggle');
+    
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')) {
+        toggleButton.textContent = 'Modo Claro';
+    } else {
+        toggleButton.textContent = 'Modo Escuro';
+    }
+}
+// Atualize o toggleDarkMode para adicionar/remover classes de forma consistente
+function toggleDarkMode() {
+    const body = document.body;
+    const toggleButton = document.getElementById('darkModeToggle');
+    
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')) {
+        toggleButton.textContent = 'Modo Claro';
+    } else {
+        toggleButton.textContent = 'Modo Escuro';
+    }
+}
+
+// Verifique a função de animação para garantir que funcione em todos os navegadores
+function animateTitle() {
+    const title = document.querySelector('.title');
+    title.classList.add('animate');
+    setTimeout(() => title.classList.remove('animate'), 500);
+}
