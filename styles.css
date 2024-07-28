@@ -251,3 +251,15 @@ body.dark-mode .btn-equal:hover {
 .dark-mode .btn-equal:hover {
     background-color: #005bb5;
 }
+/* Prefixos para garantir compatibilidade com navegadores mais antigos */
+.calculator {
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Safari */
+    -moz-box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Firefox */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Padrão */
+}
+
+/* Exemplo para background-color */
+body {
+    background-color: #f0f4f8;
+    -webkit-background-color: #f0f4f8; /* Safari */
+}
